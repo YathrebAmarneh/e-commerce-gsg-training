@@ -1,0 +1,33 @@
+.sale-container {
+  position: relative;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  padding-top: 14px;
+  padding-bottom: 11px;
+  height: 15px;
+}
+
+.sale-container p {
+  position: absolute;
+  left: 33%;
+}
+
+/* responsive responsive responsive responsive */
+@media only screen and (max-width: 375px) {
+  .sale-container {
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    /* width: 375px; */
+    height: 15px;
+  }
+  .sale-container p {
+    position: static;
+    left: 0%;
+  }
+}

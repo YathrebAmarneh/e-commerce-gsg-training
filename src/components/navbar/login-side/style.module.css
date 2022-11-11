@@ -1,0 +1,22 @@
+.login {
+  text-decoration: none;
+  color: black;
+  margin-right: 20px;
+}
+
+.rightNavbar {
+  display: flex;
+  align-items: center;
+}
+
+.headerIcons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+/* responsive responsive responsive responsive */
+@media only screen and (max-width: 375px) {
+  .login {
+    margin-right: 15px;
+  }
+}

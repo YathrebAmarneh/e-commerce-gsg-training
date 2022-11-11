@@ -1,0 +1,49 @@
+.price {
+  color: rgba(255, 96, 8, 1);
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 30px;
+}
+
+.ratingFromFive {
+  color: rgba(102, 102, 102, 1);
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0px;
+  text-align: justified;
+  line-height: 20px;
+}
+
+.priceRating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review {
+  display: flex;
+  align-items: center;
+}
+
+/* responsive responsive responsive responsive */
+@media only screen and (max-width: 375px) {
+  .priceRating {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .title {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .container {
+    margin-bottom: 20px;
+  }
+
+  .review {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+}

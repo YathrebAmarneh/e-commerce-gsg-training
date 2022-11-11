@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10.4% 20px 10.4%;
+  background-color: #fcfcfc;
+}
+.container h1 {
+  color: rgba(51, 51, 58, 1);
+  font-size: 42px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 60px;
+}
+
+.container img {
+  width: 361px;
+  height: 240px;
+}
+
+.container .recommendedVideo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+.videosButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+/* responsive responsive responsive responsive */
+@media only screen and (max-width: 375px) {
+  .container img {
+    width: 105%;
+    height: 200px;
+  }
+}

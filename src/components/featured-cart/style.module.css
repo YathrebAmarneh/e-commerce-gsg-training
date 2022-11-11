@@ -1,0 +1,53 @@
+.container img {
+  width: 263px;
+  /* height: 390px; */
+}
+
+.container {
+  position: relative;
+  width: 263px;
+}
+
+.featuredImage {
+  position: relative;
+}
+
+.featuredImage .new {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: orangered;
+  color: white;
+}
+
+.hover {
+  display: none;
+}
+.container:hover .hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 390px;
+  width: 263px;
+  background-color: rgb(248 248 248);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+/* responsive responsive responsive responsive */
+@media only screen and (max-width: 375px) {
+  .container img {
+    width: 100%;
+    height: 390px;
+  }
+  .container {
+    width: 100%;
+  }
+
+  .featuredImage {
+    position: relative;
+    width: 263px;
+    height: 390px;
+  }
+}

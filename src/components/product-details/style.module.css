@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+}
+
+.description {
+  width: 50%;
+  margin-left: 115px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.content {
+  display: flex;
+  justify-content: space-around;
+  /* gap: 28px; */
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.viewFullProductDetails {
+  margin-top: 40px;
+}
+
+.viewFullProductDetails {
+  display: flex;
+  justify-content: center;
+}
+
+/* responsive responsive responsive responsive */
+@media only screen and (max-width: 375px) {
+  .content {
+    flex-direction: column;
+  }
+  .container {
+    width: 100%;
+  }
+
+  .description {
+    width: 100%;
+    margin-left: 5px;
+  }
+}

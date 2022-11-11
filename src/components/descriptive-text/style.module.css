@@ -1,0 +1,59 @@
+.container {
+  margin-top: 25px;
+}
+
+.descriptionContent,
+.discountPercentage,
+.brand,
+.category {
+  border-bottom: 1px solid rgb(246, 232, 232);
+  padding-bottom: 16px;
+  padding-top: 14px;
+}
+
+.descriptionContent {
+  display: flex;
+  flex-direction: column;
+}
+.discountPercentage,
+.brand,
+.category {
+  display: flex;
+  align-items: center;
+}
+
+.descriptionContent h5,
+.discountPercentage h5,
+.brand h5,
+.category h5 {
+  color: rgba(0, 0, 0, 1);
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 30px;
+  width: 200px;
+}
+
+.descriptionContent h5 {
+  margin-bottom: 10px;
+}
+.descriptionContent p,
+.discountPercentage p,
+.brand p,
+.category p {
+  color: rgba(102, 102, 102, 1);
+  font-size: 16px;
+  font-weight: 300;
+  text-align: justified;
+  line-height: 20px;
+}
+
+/* responsive responsive responsive responsive */
+@media only screen and (max-width: 375px) {
+  .descriptionContent h5,
+  .discountPercentage h5,
+  .brand h5,
+  .category h5 {
+    width: 100px;
+  }
+}

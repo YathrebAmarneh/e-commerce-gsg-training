@@ -1,0 +1,24 @@
+.desktopNavigation {
+  padding: 14px 10.4% 14px 10.4%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftNavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10%;
+  width: 60%;
+}
+.leftNavbar img {
+  height: 28px;
+  width: 120px;
+}
+/* responsive responsive responsive responsive */
+@media only screen and (max-width: 375px) {
+  .desktopNavigation {
+    display: none;
+  }
+}

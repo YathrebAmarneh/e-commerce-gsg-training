@@ -1,0 +1,24 @@
+.container {
+  padding: 62px 10.4% 60px 10.4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.image {
+  height: 43px;
+  width: 66.94%;
+}
+
+/* responsive responsive responsive responsive */
+@media only screen and (max-width: 375px) {
+  .container {
+    padding: 0;
+  }
+  .image {
+    height: 43px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,40 @@
+.container {
+  padding: 41px 10.4% 41px 10.4%;
+  background-color: #33333a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 280px;
+}
+
+.topFooter {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 5.27%;
+}
+
+.footerData ul {
+  list-style: none;
+  color: rgba(222, 222, 222, 1);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 25px;
+}
+
+.container .subscribe-item h5 {
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 30px;
+}
+
+/* responsive responsive responsive responsive */
+@media only screen and (max-width: 375px) {
+  .topFooter {
+    flex-wrap: wrap;
+  }
+}

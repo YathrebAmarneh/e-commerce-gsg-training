@@ -1,0 +1,18 @@
+figure{
+    background-color: white;
+    text-align: center;
+}
+
+.video-thumb{
+    position: relative;
+}
+.play-circle{
+    color: white;
+    position: absolute;
+    top:30%;
+    right:35%;
+    cursor: pointer;
+    width:90px;
+    height: 90px;
+}
+

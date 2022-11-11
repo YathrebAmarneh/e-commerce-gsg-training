@@ -1,0 +1,6 @@
+/* responsive responsive responsive responsive */
+@media only screen and (max-width: 375px) {
+  .container {
+    margin-bottom: 30px;
+  }
+}
