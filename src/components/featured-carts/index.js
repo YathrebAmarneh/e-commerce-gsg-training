@@ -11,34 +11,34 @@ const FeaturedCarts = ({ data, className, categoryName, value }) => {
 
         if (!categoryName || categoryName === 'reset') {
 
-            return data.products
+            return data?.products
         }
 
-        return data.products.filter((product) => product.category === categoryName);
+        return data?.products.filter((product) => product.category === categoryName);
     }
 
-    var filteredList = useMemo(getFilteredList, [categoryName, data.products]);
+    var filteredList = useMemo(getFilteredList, [categoryName]);
 
     const getSortedList = () => {
 
         if (value === 'rating') {
-            return filteredList.sort((p1, p2) => (p1.rating < p2.rating) ? 1 : (p1.rating > p2.rating) ? -1 : 0)
+            return data?.products.sort((p1, p2) => (p1.rating < p2.rating) ? 1 : (p1.rating > p2.rating) ? -1 : 0)
         }
 
         if (value === 'price') {
-            return filteredList.sort((p1, p2) => (p1.price < p2.price) ? 1 : (p1.price > p2.price) ? -1 : 0)
+            return data?.products.sort((p1, p2) => (p1.price < p2.price) ? 1 : (p1.price > p2.price) ? -1 : 0)
         }
 
         if (value === 'name') {
-            return filteredList.sort((a, b) => a.title.localeCompare(b.title))
+            return data?.products.sort((a, b) => a.title.localeCompare(b.title))
         }
     }
-    var sortedList = useMemo(getSortedList, [filteredList, value]);
+    var sortedList = useMemo(getSortedList, [data.products, value]);
     console.log('sortedList', sortedList)
     return (
         <div className={`${style[className]}`}>
             <div className={`${style[classNname]}`}>
-                {filteredList.map((productItem, index) => {
+                {sortedList?.map((productItem, index) => {
                     return (
                         <>
                             <FeaturedCart key={index} {...productItem} />
