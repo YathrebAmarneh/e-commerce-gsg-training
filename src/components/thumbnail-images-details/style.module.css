@@ -3,19 +3,23 @@
   width: 36%;
   padding-bottom: 20px;
 }
+
 .mainImage img {
   width: 380px;
   height: 400px;
 }
+
 .video {
   position: relative;
 }
+
 .play {
   position: absolute;
   top: 20%;
   left: 20%;
   cursor: pointer;
 }
+
 .imageDetails {
   display: flex;
   flex-direction: column;
@@ -48,8 +52,8 @@
     margin-right: 0;
     justify-content: center;
     padding-top: 20px;
-    /* margin-bottom: 20px; */
   }
+
   .thumbnail {
     width: 330px;
   }
@@ -70,5 +74,31 @@
   .images {
     width: 100%;
     border: 1px solid black;
+  }
+}
+
+@media only screen and (max-width:1400px) {
+  .images {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width:852px) {
+  .images {
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+  }
+
+  .imageDetails {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width:587px) {
+  .imageDetails {
+    display: flex;
+    flex-wrap: wrap;
   }
 }

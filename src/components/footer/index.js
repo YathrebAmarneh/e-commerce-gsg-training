@@ -34,14 +34,16 @@ const Footer = () => {
   return (
     <div className={style.container}>
       <div className={style.topFooter}>
-        {footerData.map((footerdata) => {
-          const { id, title, content } = footerdata;
-          return (
-            <div className={style.footerData}>
-              <FooterItem key={id} id={id} title={title} content={content} />
-            </div>
-          );
-        })}
+        <div className={style.topThree}>
+          {footerData.map((footerdata, index) => {
+            const { id, title, content } = footerdata;
+            return (
+              <div className={style.footerData}>
+                <FooterItem key={index} id={id} title={title} content={content} />
+              </div>
+            );
+          })}
+        </div>
         <SubscribeItem />
       </div>
 

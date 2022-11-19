@@ -7,7 +7,7 @@ import { useState } from "react";
 const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const containerStyles = {
-    width: "1440px",
+    // width: "1440px",
     height: "600px",
     margin: "0 auto",
   };
@@ -38,10 +38,6 @@ const ImageSlider = ({ slides }) => {
           <MdOutlineKeyboardArrowLeft size="3rem" />
         </div>
         <div style={slideStyles}></div>
-        {/* <img
-        alt="img-slider"
-        src="assets/images/c97458358789c033061390d08b4fdcf4e98893b0.png"
-      /> */}
 
         <div className={style.content}>
           <h5>Perfume Tips Tricks</h5>

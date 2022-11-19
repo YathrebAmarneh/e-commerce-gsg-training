@@ -5,13 +5,24 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 280px;
+  min-height: 230px;
+}
+
+.topThree {
+  display: flex;
+  gap: 30px;
 }
 
 .topFooter {
   display: flex;
   /* flex-wrap: wrap; */
   gap: 5.27%;
+}
+
+@media only screen and (max-width: 1020px) {
+  .topFooter {
+    flex-direction: column;
+  }
 }
 
 .footerData ul {
@@ -36,5 +47,13 @@
 @media only screen and (max-width: 375px) {
   .topFooter {
     flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .topThree {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }

@@ -5,10 +5,11 @@ const FooterItem = ({ id, title, content }) => {
     <div className={style.container}>
       <h5>{title}</h5>
       <ul>
-        {content.map((cont) => {
+        {content.map((cont, index) => {
+          console.log("title", title)
           return (
             <>
-              <li key={id}>{cont}</li>
+              <li key={index}>{cont}</li>
             </>
           );
         })}

@@ -64,11 +64,11 @@ const Explore = () => {
           <ExploreItem {...shiftedElement} />
         </div>
         <div className={style.fourItems}>
-          {exploreItems.map((exploreItem) => {
+          {exploreItems.map((exploreItem, index) => {
             const { id } = exploreItem;
             return (
               <>
-                <ExploreItem key={id} {...exploreItem} />
+                <ExploreItem key={index} {...exploreItem} />
               </>
             );
           })}

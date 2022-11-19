@@ -6,15 +6,16 @@
   width: 50%;
   margin-left: 115px;
 }
+
 .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
 .content {
   display: flex;
   justify-content: space-around;
-  /* gap: 28px; */
   padding-top: 24px;
   padding-left: 24px;
   padding-right: 24px;
@@ -30,10 +31,21 @@
 }
 
 /* responsive responsive responsive responsive */
+@media only screen and (max-width:1400px) {
+  .container {
+    justify-content: center;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+}
+
 @media only screen and (max-width: 375px) {
   .content {
     flex-direction: column;
   }
+
   .container {
     width: 100%;
   }

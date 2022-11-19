@@ -61,7 +61,7 @@ const ThumbnailImagesDetails = ({
       </div>
       <div className={style.mainImage}>
         <img alt="thumbnail" src={src} />
-        <BsPlayCircle size="5rem" color="white" className={style.playMain} />
+        {/* <BsPlayCircle size="5rem" color="white" className={style.playMain} /> */}
       </div>
     </div>
   );

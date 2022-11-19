@@ -1,25 +1,24 @@
-import AboutMatter from "../components/about-matter"
-import AsSoonOn from "../components/as-soon-on"
 import Banner from "../components/banner"
-import Explore from "../components/explore"
-import Featured from "../components/featured"
-import Footer from "../components/footer"
-import ImageSlider from "../components/image-slider"
-import Navbar from "../components/navbar"
-import RecommendedVideos from "../components/recommended-videos"
-import Sale from "../components/sale"
-import Shop from "../components/shop"
+import ProductsSorting from "../components/products-sorting"
 import SortBy from "../components/sortby"
+import { useState } from 'react'
+const ProductListing = ({ data }) => {
+    const [value, setValue] = useState()
 
-const ProductListing = ({ slides, data }) => {
+    const [sortByValue, setSortByValue] = useState()
+
+    const handleOnChange = (selectedValue) => {
+        setValue(selectedValue)
+        console.log('selectedValue', selectedValue)
+    }
+    const handleFilteringValue = (value) => {
+        setSortByValue(value)
+    }
     return (
         <div>
-            <Sale />
-            <Navbar />
-            <Banner />
-            <SortBy />
-            {/* <Featured data={data} /> */}
-            <Footer />
+            <Banner sortByValue={sortByValue} />
+            <SortBy sortByValue={sortByValue} handleOnChange={handleOnChange} />
+            <ProductsSorting handleFilteringValue={handleFilteringValue} value={value} data={data} />
         </div>
     )
 }

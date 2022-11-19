@@ -7,7 +7,7 @@ const SubscribeItem = () => {
   return (
     <div className={style.container}>
       <h5>Subscribe to newsletter</h5>
-      <div>
+      <div className={style.formSocialIcons}>
         <div className={style.form}>
           <input placeholder="Enter your email" />
           <Btn buttonContent="SUBSCRIBE" className="subscribeButton" />

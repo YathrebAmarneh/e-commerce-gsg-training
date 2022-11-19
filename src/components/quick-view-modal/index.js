@@ -1,6 +1,5 @@
-import Modal from "react-modal";
 import "./style.css";
-
+import Modal from "react-modal";
 import ProductDetails from "../product-details";
 
 const QuickViewModal = ({
@@ -9,7 +8,6 @@ const QuickViewModal = ({
   onClick,
   onRequestClose,
 }) => {
-  // console.log("productItem from QuickViewModal", productItem);
   return (
     <Modal isOpen={modalIsOpen} onRequestClose={onRequestClose}>
       <ProductDetails productItem={productItem} onClick={onClick} />

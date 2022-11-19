@@ -23,12 +23,12 @@ const RecommendedVideos = () => {
     <div className={style.container}>
       <MainTitle content="Recommended Videos" />
       <div className={style.recommendedVideo}>
-        {recommendedVideosData.map((recommendedVideosdata) => {
+        {recommendedVideosData.map((recommendedVideosdata, index) => {
           const { imageName, caption } = recommendedVideosdata;
           return (
             <>
               <RecommendedVideosItem
-                key={Math.random()}
+                key={index}
                 imageName={imageName}
                 caption={caption}
               />

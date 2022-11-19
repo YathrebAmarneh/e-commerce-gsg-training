@@ -2,9 +2,3 @@
   padding: 20px 10.4% 20px 10.4%;
   background-color: #fcfcfc;
 }
-
-.featuredImages {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}

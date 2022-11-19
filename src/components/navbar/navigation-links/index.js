@@ -5,10 +5,10 @@ const NavigationLinks = () => {
   const data = ["SHOP", "FABRIC", "JOURNAL", "ABOUT"];
   return (
     <div className={style.NavigationLinks}>
-      {data.map((item) => {
+      {data.map((item, index) => {
         return (
           <>
-            <a key={Math.random()} href={`#${item.toLowerCase()}`}>
+            <a key={index} href={`#${item.toLowerCase()}`}>
               {item}
               <IoIosArrowDown className="IoIosArrowDown" />
             </a>

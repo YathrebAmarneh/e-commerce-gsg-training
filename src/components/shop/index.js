@@ -25,13 +25,13 @@ const Shop = () => {
     <div className="shop">
       <MainTitle content="Shop" />
       <div className="shop-images">
-        {shopData.map((shopdata) => {
+        {shopData.map((shopdata, index) => {
           const { imagename, piecename } = shopdata;
 
           return (
             <>
               <ShopItem
-                key={Math.random()}
+                key={index}
                 imagename={imagename}
                 piecename={piecename}
               />
