@@ -22,18 +22,18 @@ const FeaturedCarts = ({ data, className, categoryName, value }) => {
     const getSortedList = () => {
 
         if (value === 'rating') {
-            return data?.products.sort((p1, p2) => (p1.rating < p2.rating) ? 1 : (p1.rating > p2.rating) ? -1 : 0)
+            return filteredList.sort((p1, p2) => (p1.rating < p2.rating) ? 1 : (p1.rating > p2.rating) ? -1 : 0)
         }
 
         if (value === 'price') {
-            return data?.products.sort((p1, p2) => (p1.price < p2.price) ? 1 : (p1.price > p2.price) ? -1 : 0)
+            return filteredList.sort((p1, p2) => (p1.price < p2.price) ? 1 : (p1.price > p2.price) ? -1 : 0)
         }
 
         if (value === 'name') {
-            return data?.products.sort((a, b) => a.title.localeCompare(b.title))
+            return filteredList.sort((a, b) => a.title.localeCompare(b.title))
         }
     }
-    var sortedList = useMemo(getSortedList, [data.products, value]);
+    var sortedList = useMemo(getSortedList, [filteredList, value]);
     console.log('sortedList', sortedList)
     return (
         <div className={`${style[className]}`}>
