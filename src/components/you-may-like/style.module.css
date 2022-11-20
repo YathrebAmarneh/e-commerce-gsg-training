@@ -1,0 +1,15 @@
+.container {
+    margin-bottom: 59px;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.container img {
+    width: 263px;
+    height: 390px;
+}

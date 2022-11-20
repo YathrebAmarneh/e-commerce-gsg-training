@@ -4,6 +4,8 @@ import ProductListing from './views/ProductListing'
 import Layout from './Layout'
 import axios from "axios";
 import { useState, useEffect } from "react";
+import ProductDetails from './components/product-details';
+import ProductDetailsPage from './views/ProductDetailsPage';
 
 
 const slides = [
@@ -39,6 +41,7 @@ const Router = () => {
                 <Route element={<Layout />}>
                     <Route index element={<HomePage data={data} slides={slides} />} />
                     <Route path="ProductListing" element={<ProductListing data={data} />} />
+                    <Route path="ProductDetails" element={<ProductDetailsPage />} />
                 </Route>
             </Routes>
         </BrowserRouter>
