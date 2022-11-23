@@ -2,11 +2,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import HomePage from './views/HomePage'
 import ProductListing from './views/ProductListing'
 import Layout from './Layout'
-import axios from "axios";
-import { useState, useEffect } from "react";
-import ProductDetails from './components/product-details';
+// import axios from "axios";
+// import { useState, useEffect } from "react";
 import ProductDetailsPage from './views/ProductDetailsPage';
-
+import useData from './hooks/useData'
 
 const slides = [
     { url: "c97458358789c033061390d08b4fdcf4e98893b0.png" },
@@ -16,24 +15,27 @@ const slides = [
 
 
 const Router = () => {
-    const [data, setData] = useState([]);
+    const data = useData('https://dummyjson.com/products')
+    console.log('data from router', data)
+    // const [data, setData] = useState([]);
 
-    const [isFetch, setIsFetch] = useState(true);
+    // const [isFetch, setIsFetch] = useState(true);
 
-    const getData = async () => {
-        setIsFetch(true);
-        const response = await axios.get("https://dummyjson.com/products");
-        setData(response.data);
-        setIsFetch(false);
-    };
+    // const getData = async () => {
+    //     setIsFetch(true);
+    //     const response = await axios.get("https://dummyjson.com/products");
+    //     setData(response.data);
+    //     setIsFetch(false);
+    // };
 
-    useEffect(() => {
-        getData();
-    }, []);
+    // useEffect(() => {
+    //     getData();
+    // }, []);
 
-    if (isFetch) {
-        return "Data is Loading ...";
-    }
+    // if (isFetch) {
+    //     return "Data is Loading ...";
+    // }
+    // console.log('data from router', data)
 
     return (
         <BrowserRouter>

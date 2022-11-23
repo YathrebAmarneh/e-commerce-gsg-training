@@ -7,6 +7,7 @@ import RecommendedVideos from "../components/recommended-videos"
 import Shop from "../components/shop"
 
 const HomePage = ({ slides, data }) => {
+    console.log('data from home', data)
     return (
         <div>
             <ImageSlider slides={slides} />

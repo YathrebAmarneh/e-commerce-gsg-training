@@ -4,7 +4,7 @@ import TitleCloseModal from "../title-close-modal";
 import TitleStarsPrice from "../title-stars-price";
 import DescriptiveText from "../descriptive-text";
 import Btn from "../shared-components/button";
-import Quantity from "../quantity";
+import Quantity from "../quantity"
 
 const ProductDetails = ({ onClick, productItem }) => {
   console.log("productItem from product details", productItem);
@@ -21,12 +21,16 @@ const ProductDetails = ({ onClick, productItem }) => {
     thumbnail,
     images: [image1, image2, image3, image4, image5],
   } = productItem;
+
+
+  const openInNewTab = url => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
   return (
     <div className={style.container}>
       <div>
         <TitleCloseModal title={title} onClick={onClick} />
       </div>
-
       <div className={style.content}>
         <ThumbnailImagesDetails
           thumbnail={thumbnail}
@@ -49,7 +53,9 @@ const ProductDetails = ({ onClick, productItem }) => {
         </div>
       </div>
       <div className={style.viewFullProductDetails}>
+
         <Btn
+          onClick={() => openInNewTab('http://localhost:3000/ProductDetails')}
           buttonContent="View Full product Details"
           className="viewFullProductDetails"
         />
