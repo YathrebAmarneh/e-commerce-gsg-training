@@ -6,6 +6,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import ProductDetails from './components/product-details';
 import ProductDetailsPage from './views/ProductDetailsPage';
+import Login from './components/login';
 
 
 const slides = [
@@ -37,11 +38,13 @@ const Router = () => {
 
     return (
         <BrowserRouter>
+
             <Routes>
                 <Route element={<Layout />}>
                     <Route index element={<HomePage data={data} slides={slides} />} />
                     <Route path="ProductListing" element={<ProductListing data={data} />} />
                     <Route path="ProductDetails" element={<ProductDetailsPage />} />
+                    <Route path='login' element={<Login />} />
                 </Route>
             </Routes>
         </BrowserRouter>

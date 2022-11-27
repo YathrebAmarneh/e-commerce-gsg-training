@@ -5,8 +5,12 @@ import TitleStarsPrice from "../title-stars-price";
 import DescriptiveText from "../descriptive-text";
 import Btn from "../shared-components/button";
 import Quantity from "../quantity";
+import { useNavigate } from "react-router-dom";
+
 
 const ProductDetails = ({ onClick, productItem }) => {
+  const navigate = useNavigate();
+
   console.log("productItem from product details", productItem);
   const {
     id,
@@ -50,6 +54,7 @@ const ProductDetails = ({ onClick, productItem }) => {
       </div>
       <div className={style.viewFullProductDetails}>
         <Btn
+          onClick={() => navigate("/ProductDetails")}
           buttonContent="View Full product Details"
           className="viewFullProductDetails"
         />
