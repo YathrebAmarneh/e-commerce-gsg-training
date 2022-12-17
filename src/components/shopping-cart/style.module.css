@@ -1,0 +1,6 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 20px 10.4% 20px 10.4%; */
+}
+

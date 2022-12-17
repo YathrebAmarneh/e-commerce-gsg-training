@@ -11,6 +11,10 @@
   text-transform: uppercase;
 }
 
+.NavigationLinks a {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 1320px) {
   .NavigationLinks {
     display: flex;
@@ -18,7 +22,6 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    /* padding: 5%; */
   }
 
   .NavigationLinks a {

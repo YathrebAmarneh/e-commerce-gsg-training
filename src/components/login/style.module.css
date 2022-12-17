@@ -9,6 +9,19 @@
     margin-bottom: 40px;
 }
 
+.form button {
+    width: 30%;
+    height: 60px;
+    margin: auto;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 30px;
+    border: 1px solid gray
+}
+
 .form {
     display: flex;
     flex-direction: column;
@@ -28,10 +41,13 @@
     margin-bottom: 20px;
 }
 
+.form input[type="text"],
 .form input[type="email"],
 .form input[type="password"] {
     padding-left: 20px;
     border-radius: 10px;
+    font-size: 18px;
+    border: none
 }
 
 .form input[type="submit"] {

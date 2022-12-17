@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    /* align-items: center; */
+    gap: 15px
+}
+
+.container img {
+    width: 263px;
+    object-fit: cover;
+}
+
+
+.imageDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}

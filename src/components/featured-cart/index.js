@@ -3,9 +3,8 @@ import Btn from "../shared-components/button";
 import { useState } from "react";
 import QuickViewModal from "../quick-view-modal";
 
-const FeaturedCart = ({ id, ...productItem }) => {
+const FeaturedCart = ({ children, ...productItem }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
-
   return (
     <div className={style.container}>
       <div className={style.featuredImage}>
@@ -13,7 +12,7 @@ const FeaturedCart = ({ id, ...productItem }) => {
       </div>
 
       <div className={style.imageDescription}>
-        <p className="title">{productItem.title}</p>
+        <p className={style.title}>{productItem.title}</p>
         <p className="price">{`${productItem.price} $`}</p>
       </div>
 
@@ -23,7 +22,9 @@ const FeaturedCart = ({ id, ...productItem }) => {
           className="quickView"
           onClick={() => setModalIsOpen(true)}
         />
+        {children}
         <QuickViewModal
+          id={productItem.id}
           modalIsOpen={modalIsOpen}
           onClick={() => setModalIsOpen(false)}
           onRequestClose={() => setModalIsOpen(false)}

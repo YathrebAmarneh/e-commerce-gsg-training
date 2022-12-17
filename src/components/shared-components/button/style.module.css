@@ -141,6 +141,60 @@
   line-height: 40px;
 }
 
+.noMatch {
+  border: none;
+  background-color: transparent;
+}
+
+.checkout {
+  width: 80%;
+  height: 40px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  background-color: blueviolet;
+  font-weight: bold;
+}
+
+.removeItem {
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  color: gray;
+  width: 60px
+}
+
+.writeReview {
+  color: rgba(255, 255, 255, 1);
+  background-color: black;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 20px;
+  padding: 10px 18.89px;
+}
+
+.showMoreReviews {
+  color: rgba(255, 94, 27, 1);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: left;
+  line-height: 40px;
+  background-color: transparent;
+  border: none;
+}
+
+.removeWhishlist {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+}
+
 /* responsive responsive responsive responsive */
 @media only screen and (max-width: 1020px) {
   .subscribeButton {

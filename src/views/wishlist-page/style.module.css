@@ -1,0 +1,19 @@
+.container {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container h2 {
+    margin-top: 50px;
+    margin: auto;
+}
+
+.wishlistContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 10.4% 20px 10.4%;
+}

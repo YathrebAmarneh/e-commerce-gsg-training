@@ -12,8 +12,21 @@
 .headerIcons {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 10px;
 }
+
+.cart,
+.search,
+.heart {
+  color: black;
+}
+
+.avatar {
+  cursor: pointer;
+  margin-right: 30px;
+}
+
 /* responsive responsive responsive responsive */
 @media only screen and (max-width: 375px) {
   .login {

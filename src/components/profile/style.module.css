@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container h1 {
+    min-width: 40%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.container button {
+    width: 40%;
+    margin: auto;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    height: 60px;
+    margin-bottom: 50px;
+    background-color: transparent;
+    font-size: 18px;
+}

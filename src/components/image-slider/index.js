@@ -7,7 +7,6 @@ import { useState } from "react";
 const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const containerStyles = {
-    // width: "1440px",
     height: "600px",
     margin: "0 auto",
   };
@@ -35,7 +34,7 @@ const ImageSlider = ({ slides }) => {
     <div style={containerStyles}>
       <div className={style.container} style={sliderStyles}>
         <div className={style.leftArrow} onClick={goToPrevious}>
-          <MdOutlineKeyboardArrowLeft size="3rem" />
+          <MdOutlineKeyboardArrowLeft size="3rem" cursor="pointer" />
         </div>
         <div style={slideStyles}></div>
 
@@ -45,7 +44,7 @@ const ImageSlider = ({ slides }) => {
         </div>
 
         <div className={style.rightArrow} onClick={goToNext}>
-          <MdOutlineKeyboardArrowRight size="3rem" />
+          <MdOutlineKeyboardArrowRight size="3rem" cursor="pointer" />
         </div>
       </div>
     </div>
