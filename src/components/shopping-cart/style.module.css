@@ -1,6 +1,11 @@
-.container{
+.subContainer {
     display: flex;
-    justify-content: space-between;
-    /* padding: 20px 10.4% 20px 10.4%; */
+    flex-wrap: wrap;
+    gap: 40px
 }
 
+@media only screen and (max-width: 1020px) {
+    .container {
+        flex-direction: column;
+    }
+}

@@ -1,7 +1,7 @@
 import style from "./style.module.css";
+import ShoppingCartItemTable from "../shopping-cart-item-table";
 import { Link } from "react-router-dom";
 import { AiOutlineArrowLeft } from "react-icons/ai";
-import ShoppingCartItemTable from "../shopping-cart-item-table";
 
 const ShoppingCartItems = () => {
   return (
@@ -10,12 +10,11 @@ const ShoppingCartItems = () => {
         <h1>Shopping Cart</h1>
       </div>
       <hr />
-      <ShoppingCartItemTable />
-
       <Link to="/ProductListing">
         {" "}
         <AiOutlineArrowLeft /> Continue Shopping
       </Link>
+      <ShoppingCartItemTable />
     </div>
   );
 };

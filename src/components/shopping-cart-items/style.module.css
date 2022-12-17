@@ -12,10 +12,12 @@
     flex-direction: column;
     margin-top: 40px;
     padding-left: 10.4%;
+    height: 100vh;
+    overflow-y: auto;
 }
 
 .container hr {
-    width: 80%;
+    width: 100%;
     color: gray;
     display: flex;
 }
