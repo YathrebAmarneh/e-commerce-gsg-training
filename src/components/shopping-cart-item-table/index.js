@@ -1,5 +1,4 @@
 import { useShoppingCart } from "../../context/ShoppingCartContext";
-import MainTitle from "../shared-components/main-title";
 import ShoppingCartItem from "../shopping-cart-item";
 import style from "./style.module.css";
 import { useProducts } from "../../context/ProductsContext";
@@ -8,8 +7,6 @@ const ShoppingCartItemTable = () => {
   const { products } = useProducts();
   console.log("products from table", products);
   const { cartItems } = useShoppingCart();
-  // console.log("cartItems from ShoppingCartItemTable", cartItems);
-  // console.log("length of cartItems", cartItems.length);
   return (
     <div className={style.container}>
       {cartItems.length ? (

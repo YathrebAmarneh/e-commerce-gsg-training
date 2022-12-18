@@ -10,7 +10,7 @@ const Login = () => {
   const location = useLocation();
   const redirectPath = location.state?.path || "/";
   const navigate = useNavigate();
-  const [cookie, setCookie] = useCookies();
+  const [cookies, setCookie] = useCookies();
   const [user, setUser] = useState("");
   const [formData, setFormData] = useState({});
 

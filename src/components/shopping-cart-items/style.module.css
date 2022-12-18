@@ -20,6 +20,7 @@
     width: 100%;
     color: gray;
     display: flex;
+    margin-bottom: 40px;
 }
 
 .container a {
@@ -28,4 +29,12 @@
     align-items: center;
     gap: 7px;
     margin-bottom: 20px;
+}
+
+/* responsive responsive responsive responsive */
+
+@media only screen and (max-width: 1274px) {
+    .container {
+        width: 100%;
+    }
 }
