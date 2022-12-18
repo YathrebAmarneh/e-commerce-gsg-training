@@ -1,6 +1,6 @@
 .title {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 80%;
     margin-bottom: 20px;
     align-items: center;
@@ -29,6 +29,7 @@
     align-items: center;
     gap: 7px;
     margin-bottom: 20px;
+    margin-left: 20px;
 }
 
 /* responsive responsive responsive responsive */
@@ -36,5 +37,7 @@
 @media only screen and (max-width: 1274px) {
     .container {
         width: 100%;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
