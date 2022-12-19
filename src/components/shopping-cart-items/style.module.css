@@ -4,6 +4,8 @@
     width: 80%;
     margin-bottom: 20px;
     align-items: center;
+    border-bottom: 1px solid grey;
+    padding: 20px;
 }
 
 .container {
@@ -18,7 +20,7 @@
 
 .container hr {
     width: 100%;
-    color: gray;
+    color: rgb(203, 194, 194);
     display: flex;
     margin-bottom: 40px;
 }

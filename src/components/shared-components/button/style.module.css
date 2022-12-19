@@ -99,7 +99,6 @@
 .counter {
   background-color: white;
   width: 40px;
-  /* padding-bottom: 12px; */
 }
 
 .addToCart {
@@ -161,7 +160,7 @@
   background-color: transparent;
   border: none;
   font-weight: bold;
-  color: gray;
+  color: red;
   width: 60px
 }
 
