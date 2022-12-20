@@ -1,6 +1,7 @@
 .shop {
   padding: 20px 10.4% 20px 10.4%;
 }
+
 .shop-images {
   display: flex;
   flex-wrap: wrap;
@@ -19,6 +20,13 @@
 }
 
 /* responsive responsive responsive responsive */
+@media only screen and (max-width: 664px) {
+  .shop-images {
+    gap: 15px;
+    justify-content: center;
+  }
+}
+
 @media only screen and (max-width: 375px) {
   .shop-images {
     gap: 15px;

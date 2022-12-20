@@ -6,10 +6,10 @@
 .featuredImages {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     gap: 20px;
     height: 925px;
     overflow-y: hidden;
-
 }
 
 .loading {

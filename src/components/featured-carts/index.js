@@ -41,7 +41,6 @@ const FeaturedCarts = ({ data, className, categoryName, value }) => {
     <div className={`${style[className]}`}>
       <div className={`${style[classNname]}`}>
         {filteredList?.map((productItem, index) => {
-          console.log("productItem from featured carts", productItem);
           return (
             <>
               <FeaturedCart key={index} {...productItem} />

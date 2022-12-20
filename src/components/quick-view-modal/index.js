@@ -9,8 +9,6 @@ const QuickViewModal = ({
   onClick,
   onRequestClose,
 }) => {
-  console.log("productItem from quick view modal", productItem);
-  console.log("id from quick view modal", id);
   return (
     <Modal isOpen={modalIsOpen} onRequestClose={onRequestClose}>
       <ProductDetails

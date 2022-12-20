@@ -10,7 +10,6 @@ const ProductDetails = ({ onClick, productItem }) => {
   console.log("productItem from product details", productItem);
   const { title } = productItem;
 
-  // console.log("id from ProductDetails", id);
   return (
     <div className={style.container}>
       <div>

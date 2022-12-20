@@ -11,7 +11,6 @@ const WishListPage = () => {
   return (
     <div className={style.container}>
       <MainTitle content="WishList" />
-      <div></div>
       {wishlistCartItems.length ? (
         <div className={style.wishlistContainer}>
           {wishlistCartItems.map((Item, index) => {
