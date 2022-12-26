@@ -34,9 +34,19 @@
 }
 
 .containerListingProduct {
-    width: 80%
+    width: 80%;
 }
 
-/* .hiddenLoading {
-    display: none;
-} */
+@media only screen and (max-width: 556px) {
+    .featuredImages {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .containerListingProduct {
+        margin: auto;
+    }
+}

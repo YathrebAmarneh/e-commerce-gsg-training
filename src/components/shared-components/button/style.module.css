@@ -161,7 +161,9 @@
   border: none;
   font-weight: bold;
   color: red;
-  width: 60px
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
 
 .writeReview {

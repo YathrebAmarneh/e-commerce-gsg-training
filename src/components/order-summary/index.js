@@ -13,10 +13,12 @@ const OrderSummary = () => {
   return (
     <div className={style.orderSummary}>
       <h1>Order summary</h1>
-      <hr />
+      {/* <hr /> */}
       <div className={style.quantityPrice}>
-        <span>{`items:${cartQuantity}`}</span>
-        <span>{`${totalCost}$`}</span>
+        <span>{`items: ${cartQuantity}`}</span>
+        <span>
+          <h1>{`${totalCost}$`}</h1>
+        </span>
       </div>
       <div className={style.shipping}>
         <label>SHIPPING</label>
@@ -33,7 +35,9 @@ const OrderSummary = () => {
       <input type="submit" value="APPLY" />
       <div className={style.totalCost}>
         <label>TOTAL COST</label>
-        <span>{`${totalCost}$`}</span>
+        <span>
+          <b>{`${totalCost}$`}</b>
+        </span>
       </div>
       <Btn className="checkout" buttonContent="CHECKOUT" />
     </div>

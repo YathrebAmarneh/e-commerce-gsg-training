@@ -6,17 +6,15 @@ import { useAuth } from "../../components/authentication";
 import { useNavigate, useLocation } from "react-router-dom";
 
 const Login = () => {
-  const auth = useAuth();
-  const location = useLocation();
-  const redirectPath = location.state?.path || "/";
+  const { login } = useAuth();
+  const { state } = useLocation();
+  const redirectPath = state?.path || "/";
   const navigate = useNavigate();
   const [cookies, setCookie] = useCookies();
-  const [user, setUser] = useState("");
   const [formData, setFormData] = useState({});
 
   const handleEmailChange = (e) => {
     setFormData({ ...formData, email: e.target.value });
-    setUser(e.target.value);
   };
 
   const handlePasswordChange = (e) => {
@@ -25,20 +23,25 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    auth.login(user);
-    navigate(redirectPath, { replace: true });
-    console.log(formData);
     const {
       data: {
-        data: { Token, Name },
+        data: { Id, Token, Name },
       },
     } = await axios.post(
       "http://restapi.adequateshop.com/api/authaccount/login",
       formData
     );
+    setCookie("Id", Id);
     setCookie("token", Token);
     setCookie("name", Name);
-    console.log(Token, Name);
+    // setToken(Token);
+    // console.log("token*", Token);
+
+    login(Token);
+    navigate(redirectPath, { replace: true });
+
+    // console.log("tokennnn", token);
+    // console.log(Token, Name);
   };
   return (
     <div className={style.container}>

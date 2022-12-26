@@ -4,13 +4,16 @@ import { useWishlist } from "../../context/WishlistContext";
 import style from "./style.module.css";
 import { useProducts } from "../../context/ProductsContext";
 import Btn from "../../components/shared-components/button";
+import { MdOutlineFavorite } from "react-icons/md";
 
 const WishListPage = () => {
   const { wishlistCartItems, removeWishlistItemFromCart } = useWishlist();
   const { products } = useProducts();
   return (
     <div className={style.container}>
-      <MainTitle content="WishList" />
+      <MainTitle content="WishList">
+        <MdOutlineFavorite size="2rem" color="red" />
+      </MainTitle>
       {wishlistCartItems.length ? (
         <div className={style.wishlistContainer}>
           {wishlistCartItems.map((Item, index) => {

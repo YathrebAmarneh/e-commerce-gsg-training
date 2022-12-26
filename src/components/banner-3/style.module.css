@@ -1,24 +1,25 @@
-.container div{
+.container div {
     display: flex;
     justify-content: center;
-    margin-bottom: 141px;
-}
-.container img{
-height:360px ;
-width:361px;
+    margin-bottom: 50px;
 }
 
-.container div{
+.container img {
+    height: 360px;
+    width: 361px;
+}
+
+.container div {
     display: flex;
     flex-wrap: wrap;
-    gap:29px
-    }
+    gap: 29px
+}
 
-.container p{
+.container p {
     width: 52.2%;
     margin: auto;
     font-size: 16px;
     font-weight: 400;
     text-align: justify;
     line-height: 25px;
-    }
+}

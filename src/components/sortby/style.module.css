@@ -1,13 +1,11 @@
 .container {
-    height: 60px;
+    min-height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 12px;
     padding-left: 153px;
     padding-right: 151px;
-    /* filter: drop-shadow(2px 4px 8px #585858) */
-
     box-shadow: 2px 10px 26px rgb(244, 241, 241);
 
 }
@@ -24,16 +22,34 @@
     }
 
     .sort {
-        width: 80%;
-        /* background-color: red; */
+        display: flex;
         justify-content: center;
+        gap: 25px;
+        width: 80%;
     }
 
 }
 
-.sort {
-    display: flex;
-    gap: 25px;
+@media only screen and (max-width: 440px) {
+
+    .sort {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        min-height: 40px;
+        margin: auto;
+    }
+
+    .sort label,
+    .sort select {
+        margin: auto;
+    }
+
+    .sort select {
+        padding: 10px;
+    }
+
 }
 
 .container select {
@@ -50,7 +66,6 @@
 
 
 .container label {
-    /* width: 75px; */
     color: rgba(51, 51, 51, 1);
     font-size: 24px;
     font-weight: 400;

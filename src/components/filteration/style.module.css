@@ -20,17 +20,6 @@
     text-transform: uppercase;
 }
 
-/* .reset {
-    color: rgba(255, 96, 8, 1);
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    text-align: left;
-    line-height: 40px;
-    text-transform: uppercase;
-    cursor: pointer
-} */
-
 .container ul {
     list-style-type: none;
 }
@@ -44,4 +33,18 @@
     line-height: 40px;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 1020px) {
+    .container {
+        padding-left: 30px;
+        margin-bottom: 40px;
+
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .container {
+        margin: auto;
+    }
 }

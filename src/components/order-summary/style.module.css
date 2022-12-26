@@ -25,7 +25,12 @@
 .quantityPrice {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin-bottom: 20px;
+}
+
+.quantityPrice h1 {
+    color: orangered;
 }
 
 .shipping {

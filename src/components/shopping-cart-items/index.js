@@ -1,6 +1,6 @@
 import style from "./style.module.css";
 import { Link } from "react-router-dom";
-import { AiOutlineArrowLeft } from "react-icons/ai";
+import { IoMdArrowDropright } from "react-icons/io";
 import ShoppingCartItemTable from "../shopping-cart-item-table";
 
 const ShoppingCartItems = () => {
@@ -8,10 +8,10 @@ const ShoppingCartItems = () => {
     <div className={style.container}>
       <div className={style.title}>
         <h1>Shopping Cart</h1>
+        <Link to="/ProductListing">
+          Continue Shopping <IoMdArrowDropright size="1.5rem" />
+        </Link>
       </div>
-      <Link to="/ProductListing">
-        <AiOutlineArrowLeft /> Continue Shopping
-      </Link>
       <ShoppingCartItemTable />
     </div>
   );

@@ -2,3 +2,10 @@
   padding: 20px 10.4% 20px 10.4%;
   background-color: #fcfcfc;
 }
+
+/* responsive responsive responsive responsive */
+@media only screen and (max-width: 1030px) {
+  .container {
+    padding: 5px;
+  }
+}

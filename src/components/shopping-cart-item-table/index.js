@@ -1,11 +1,9 @@
 import { useShoppingCart } from "../../context/ShoppingCartContext";
 import ShoppingCartItem from "../shopping-cart-item";
 import style from "./style.module.css";
-import { useProducts } from "../../context/ProductsContext";
+import { TbShoppingCartPlus } from "react-icons/tb";
 
 const ShoppingCartItemTable = () => {
-  const { products } = useProducts();
-  console.log("products from table", products);
   const { cartItems } = useShoppingCart();
   return (
     <div className={style.container}>
@@ -24,7 +22,14 @@ const ShoppingCartItemTable = () => {
           })}
         </table>
       ) : (
-        <h1>Your shopping cart is empty</h1>
+        <div className={style.emptyCart}>
+          <h1>Your shopping cart is empty</h1>
+          <TbShoppingCartPlus
+            size="4rem"
+            color="grey"
+            style={{ margin: "auto" }}
+          />
+        </div>
       )}
     </div>
   );

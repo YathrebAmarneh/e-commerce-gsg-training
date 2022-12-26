@@ -1,4 +1,3 @@
-import React from "react";
 import { useAuth } from "../authentication";
 import { useNavigate } from "react-router-dom";
 import style from "./style.module.css";
@@ -7,13 +6,15 @@ const Profile = () => {
   const navigate = useNavigate();
 
   const auth = useAuth();
+  const { userData, logout } = useAuth();
   const handleLogout = () => {
-    auth.logout();
-    navigate("/", { replace: true });
+    logout();
+    navigate("/");
   };
+
   return (
     <div className={style.container}>
-      <h1>Welcome {auth.user}</h1>
+      <h1>{`Hello ${userData.name} from ${userData.location}`}</h1>
       <button type="button" onClick={handleLogout}>
         Logout
       </button>

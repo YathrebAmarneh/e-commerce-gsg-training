@@ -9,6 +9,11 @@
 .container h2 {
     margin-top: 50px;
     margin: auto;
+    color: gray;
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    width: 50%
 }
 
 .wishlistContainer {

@@ -22,14 +22,38 @@ const ShoppingCartItem = ({ id, quantity }) => {
             variant="outlined"
             aria-label="outlined primary button group"
           >
-            <Button onClick={() => increaseCartQuantity(id)}>+</Button>
-            <Button>{quantity}</Button>
             <Button
+              style={{
+                color: "black",
+                border: "1px solid grey",
+                height: "30px",
+              }}
+              sx={{ borderRadius: 12.5 }}
+              onClick={() => increaseCartQuantity(id)}
+            >
+              <b>+</b>
+            </Button>
+            <Button
+              style={{
+                color: "black",
+                border: "1px solid grey",
+                height: "30px",
+              }}
+            >
+              <b>{quantity}</b>
+            </Button>
+            <Button
+              style={{
+                color: "black",
+                border: "1px solid grey",
+                height: "30px",
+              }}
+              sx={{ borderRadius: 12.5 }}
               onClick={() =>
                 quantity > 1 ? decreaseCartQuantity(id) : removeItemFromCart(id)
               }
             >
-              -
+              <b>-</b>
             </Button>
           </ButtonGroup>
         </td>

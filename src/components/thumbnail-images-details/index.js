@@ -20,42 +20,52 @@ const ThumbnailImagesDetails = ({
   return (
     <div className={style.images}>
       <div className={style.imageDetails}>
-        <img
-          className={style.miniImage}
-          alt="miniImage"
-          src={image1}
-          ref={image1Ref}
-          onClick={() => setSrc(image1Ref.current.src)}
-        />
-        <img
-          className={style.miniImage}
-          alt="miniImage"
-          src={image2}
-          ref={image2Ref}
-          onClick={() => setSrc(image2Ref.current.src)}
-        />
-        <img
-          className={style.miniImage}
-          alt="miniImage"
-          src={image3}
-          ref={image3Ref}
-          onClick={() => setSrc(image3Ref.current.src)}
-        />
-        <img
-          className={style.miniImage}
-          alt="miniImage"
-          src={image4}
-          ref={image4Ref}
-          onClick={() => setSrc(image4Ref.current.src)}
-        />
-        <div className={style.video}>
+        {image1 && (
           <img
             className={style.miniImage}
             alt="miniImage"
-            src={image5}
-            ref={image5Ref}
-            onClick={() => setSrc(image5Ref.current.src)}
+            src={image1}
+            ref={image1Ref}
+            onClick={() => setSrc(image1Ref.current.src)}
           />
+        )}
+        {image2 && (
+          <img
+            className={style.miniImage}
+            alt="miniImage"
+            src={image2}
+            ref={image2Ref}
+            onClick={() => setSrc(image2Ref.current.src)}
+          />
+        )}
+        {image3 && (
+          <img
+            className={style.miniImage}
+            alt="miniImage"
+            src={image3}
+            ref={image3Ref}
+            onClick={() => setSrc(image3Ref.current.src)}
+          />
+        )}
+        {image4 && (
+          <img
+            className={style.miniImage}
+            alt="miniImage"
+            src={image4}
+            ref={image4Ref}
+            onClick={() => setSrc(image4Ref.current.src)}
+          />
+        )}
+        <div className={style.video}>
+          {image5 && (
+            <img
+              className={style.miniImage}
+              alt="miniImage"
+              src={image5}
+              ref={image5Ref}
+              onClick={() => setSrc(image5Ref.current.src)}
+            />
+          )}
           <BsPlayCircle size="2rem" color="white" className={style.play} />
         </div>
       </div>

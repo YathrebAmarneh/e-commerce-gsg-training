@@ -1,6 +1,7 @@
 import style from "./style.module.css";
 import Btn from "../shared-components/button";
 import { useShoppingCart } from "../../context/ShoppingCartContext";
+import { RiDeleteBin6Line } from "react-icons/ri";
 
 const ShoppingCartTableImage = ({ quantity, ...item }) => {
   const { removeItemFromCart } = useShoppingCart();
@@ -21,7 +22,9 @@ const ShoppingCartTableImage = ({ quantity, ...item }) => {
           className="removeItem"
           buttonContent="remove"
           onClick={() => removeItemFromCart(item.id)}
-        />
+        >
+          <RiDeleteBin6Line size="1.2rem" />
+        </Btn>
       </div>
     </div>
   );
