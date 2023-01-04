@@ -1,3 +1,7 @@
+
+It is a responsive e-commerce web app, I dealt in this project with a lot of topics: RESTFUL API, Routing, build-in hooks like (useState,useEffect, useRef, useMemo, useContext, useParams, useLocation,useCookies,useNavigate), custom hooks, React Context, local storage and cookies, material UI and CSS modules
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
