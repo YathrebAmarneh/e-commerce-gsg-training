@@ -44,13 +44,13 @@ const LoginSide = () => {
           <FiSearch />
         </Link>
 
-        <Badge badgeContent={wishlistCartItems.length} color="primary" showZero>
+        <Badge badgeContent={wishlistCartItems.length} color="primary">
           <Link to="heart" className={style.heart}>
             <AiOutlineHeart />
           </Link>
         </Badge>
 
-        <Badge badgeContent={cartQuantity} color="primary" showZero>
+        <Badge badgeContent={cartQuantity} color="primary">
           <Link to="ShoppingCart" className={style.cart}>
             <HiOutlineShoppingBag />
           </Link>
