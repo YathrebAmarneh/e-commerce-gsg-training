@@ -1,4 +1,5 @@
 # e-commerce-web app
+<a href="http://e-commerce-gsg.surge.sh/">Live demo</a>
 <div>
 <img width="500px" src="https://user-images.githubusercontent.com/65343735/214178100-fc7fd8e8-366d-4da8-a3d9-fcd6752931b5.png"/>
 <img width="500px" src="https://user-images.githubusercontent.com/65343735/214178241-69c46596-fdf2-4676-b92a-65ea7377f066.png"/>
